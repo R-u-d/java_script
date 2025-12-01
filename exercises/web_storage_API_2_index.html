@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tasks</title>
+  <style>
+    body { font-family: sans-serif; margin: 20px; }
+    ul { padding: 0; }
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      background: #eee;
+      padding: 8px;
+      margin-bottom: 6px;
+      border-radius: 4px;
+    }
+    .del-btn {
+      background: #d33;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Tasks</h2>
+
+  <form id="taskForm">
+    <input id="taskInput" type="text" placeholder="New task">
+    <button type="submit">Add</button>
+  </form>
+
+  <button id="reloadBtn">Reload</button>
+
+  <ul id="list"></ul>
+
+  <!-- Correct filename here -->
+  <script src="web_storage_API_2.js"></script>
+</body>
+</html>
